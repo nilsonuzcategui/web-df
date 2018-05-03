@@ -1,0 +1,259 @@
+a{
+    list-style: none;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+.menu{
+    padding-top: 10px;
+}
+.menu a{
+    color: darkcyan;
+    display: inline-block;
+    padding: 5px;
+}
+.aportes, .actualizar{
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 2em;
+    border: 3px solid rgba(1,1,1,0.5);
+}
+.aportes:hover, .actualizar:hover{
+    box-shadow: 0 0 5px 6px rgba(0,0,0,0.1);
+}
+
+
+/*estilos para el perfil */
+.datos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.datos-titulo{
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(1,1,1,0.5);
+}
+.datos-contenido{
+    background: #FFF;
+    padding: 10px;
+    border-radius: 2em;
+}
+.datos-editar{
+    margin-top: 20px;
+}
+#footer{
+	background: #777 url(../img/background_repeat.jpg);
+	background-position: center;
+	color: #FFF;
+	height:80px;
+	margin:0;
+	padding: 15px;
+	font-size:10px;
+	line-height: 15px;
+	border: 1px solid #555;
+}
+
+#footer .copyright{font-size: 13px;text-shadow: 0 1px rgba(93, 93, 93, 0.9);}
+
+
+
+
+/*
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+body{
+	background: #000;
+	color: #e3e3e3;
+	font-family: sans-serif;
+	font-size: 12px;
+	min-width: 300px;
+	text-align: center
+}
+
+#body{
+	max-width:1024px;
+	min-width: 400px;
+	margin:auto;
+	border: 0;
+	overflow:hidden;
+}
+
+#footer{
+	background: #777 url(../img/background_repeat.jpg);
+	background-position: center;
+	color: #FFF;
+	height:80px;
+	margin:0;
+	padding: 15px;
+	font-size:10px;
+	line-height: 15px;
+	border: 1px solid #555;
+}
+
+#footer .copyright{font-size: 13px;text-shadow: 0 1px rgba(93, 93, 93, 0.9);}
+
+/* GENERAL 
+a{
+	text-decoration: none;
+	-webkit-transition: all 0.218s;
+	-moz-transition: all 0.218s;
+	-ms-transition: all 0.218s;
+	-o-transition: all 0.218s;
+	transition: all 0.218s;
+}
+a:link    {color:#ffaa62;}
+a:visited {color:#ffaa62;}
+a:hover   {color:#ff7600;}
+a:active  {color:#f00;}
+.boton, #boton {
+	display: inline-block;
+	min-width: 46px;
+	color:#444!important;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	height: 27px;
+	padding: 0 8px;
+	line-height: 27px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: all 0.218s;
+	-moz-transition: all 0.218s;
+	-ms-transition: all 0.218s;
+	-o-transition: all 0.218s;
+	transition: all 0.218s;
+	border: 1px solid #dcdcdc;
+	background-color: #f5f5f5;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+	background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,.3);
+	-moz-box-shadow:0 1px 1px rgba(0,0,0,.3);
+	box-shadow:0 1px 1px rgba(0,0,0,.3);
+	/*cursor: default;
+}
+.boton:hover , #boton:hover,.boton:active{
+	background-color:#f8f8f8;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+	background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:-moz-linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:-ms-linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:-o-linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:linear-gradient(top,#f8f8f8,#f1f1f1);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8',EndColorStr='#f1f1f1');
+	border-color:#c6c6c6;
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,.3);
+	-moz-box-shadow:0 1px 1px rgba(0,0,0,.3);
+	box-shadow:0 1px 1px rgba(0,0,0,.3);
+	color:#3399FF !important
+}
+
+.tabla{color:#fff;margin:10px auto;text-align:center;}
+.fila li{display:inline-block;margin:1px 0;font-size:14px;}
+.fila:nth-child(odd) li{background-color:#ff7600;}
+.fila:nth-child(even) li{background-color:#ffaa62;}
+.fila:first-child li{background-color:#06F;color:#fff;font-weight:bold;background-image:-webkit-linear-gradient(top,#777,#333);}
+.fila a{text-decoration:none; color:#06F;}
+.fila a:hover{text-decoration:none; color:#0f143a;font-weight:bold;}
+/* PG ACCESO 
+#inicio {
+	max-width:1024px;
+	margin: 10% auto;
+	height: 458px;
+	overflow: hidden;
+}
+#iniciar_sesion{
+	background: url(../img/Logo-Distrito.png) no-repeat;
+	background-position: center;
+	margin: auto;
+	width:500px;
+	height: 446px;
+	overflow:hidden;
+}
+#form_inicio{
+	margin: 100px auto;
+}
+#iniciar_sesion legend{display:inline-block;width:300px;text-align:center;font-size:20px;font-weight:bold;padding:5px;margin-bottom:30px;}
+#iniciar_sesion .label{display:inline-block;width:70px;font-weight:bold;margin-right:10px;text-align:right;}
+#iniciar_sesion .input{background: rgba(255,255,255,0.8);border: solid 1px #d3d3d3;width:200px;font-size:14px;padding:10px 5px;margin: 5px;}
+#iniciar_sesion .ingresar{width:500px;text-align:center;margin-top:30px;}
+/* PG APORTES 
+#aportes{
+	background: #3e3e3e;
+	border: solid 1px #ddd;
+	min-height: 500px;
+}
+#aportes .boton{margin: 10px auto;}
+#aportes .menu{text-align:right;margin-right:15px;}
+.borde {
+	background:#fff;
+	color: #333;
+	margin: 25px;
+	border: solid 1px #d3d3d3;
+	line-height: 24px;
+	overflow: visible;
+}
+.borde .titulo{
+	display: block;
+	background: #333;
+	color: #eee;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+	padding: 0 15px;
+	margin-top: -15px;
+	border: solid 1px #d3d3d3;
+	overflow: hidden;
+}
+#tercero label{
+	display: inline-block;
+	min-width: 250px;
+	color: #333;
+	font-size: 14px;
+	text-align: left;
+	margin: 10px;
+	border: solid 1px #555;
+	overflow: hidden;
+}
+#tercero label strong{
+	float:left;
+	background: #333;
+	color: #ddd;
+	font-weight: bold;
+	margin: 1px;
+	margin-right: 5px;
+	padding: 0 5px;
+}
+
+/* PG EDITAR DATOS PERSONALES 
+#edit_tercero{
+	background: #3e3e3e;
+	border: solid 1px #ddd;
+	min-height: 500px;
+}
+
+.form legend{width:570px;margin:10px;font-size:20px;font-weight:bold;text-align:center;}
+.form .required{width:570px;margin: 10px auto;}
+.form .label{display:inline-block;width:100px;font-size:14px;font-weight:bold;text-align:right;}
+.form .inputText{width:250px;font-size:14px;padding:10px 5px;}
+.form .botones{width:300px;margin:10px auto;text-align:center;}
+*/

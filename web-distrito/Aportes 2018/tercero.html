@@ -1,0 +1,81 @@
+<?php
+	if(isset($sesion)){
+		$sql="SELECT * FROM tercero t WHERE t.idtercero=".$sesion.";";
+		$rs=mysqli_query($idConexion, $sql);
+		if(mysqli_num_rows($rs)==1){
+			$row = mysqli_fetch_assoc($rs);
+?>
+<div id="edit_tercero" class="form">
+	<form class="borde" action="tercero.php" method="post">
+		<legend class="titulo">Editar Datos Personales</legend>
+		<span>(Para actualizar otros datos, dirigace a las oficinas del distrito falcon)</span>
+		<fieldset>
+			<input type="hidden" name="id" value="<?=$sesion?>">
+			<div class="required">
+				<label class="label">Cedula:</label>
+				<input type="text" required name="ci" class="inputText" maxlength="45" value="<?=$row["id"]?>" disabled alt="Para actualizar este dato, dirigace a las oficinas del Distrito Falcón"/>
+			</div>
+			<div class="required">
+				<label class="label">Nombres:</label>
+				<input type="text" required name="nomb" class="inputText" maxlength="45" value="<?=$row["nombre"]?>" />
+			</div>
+			<div class="required">
+				<label class="label">Apellidos:</label>
+				<input type="text" required name="apel" class="inputText" maxlength="45" value="<?=$row["apellido"]?>" />
+			</div>
+            <div class="required">
+				<label class="label">Sexo:</label>
+                <select name="sexo" class="inputText" value="">
+                	<option value="Masculino" <?php if ($row["sexo"]=="Masculino") echo "selected";?>>Masculino</option>
+                    <option value="Femenino" <?php if ($row["sexo"]=="Femenino") echo "selected";?>>Femenino</option>
+                </select>
+				<!-- <input type="text" required name="sexo" class="inputText" maxlength="45" value="<?=$row["sexo"]?>" />-->
+			</div>
+			<div class="required">
+				<label class="label">Lugar de Nacimiento:</label>
+				<input type="text" required name="lug" class="inputText" maxlength="45" value="<?=$row["lugar_nacimiento"]?>" />
+			</div>
+			<div class="required">
+				<label class="label">Fecha de Nacimiento:</label>
+				<input type="date" required name="fech" class="inputText" maxlength="45" value="<?=$row["inicio"]?>" />
+			</div>
+			<div class="required">
+				<label class="label">Nacionalidad:</label>
+				<input type="text" required name="naci" class="inputText" maxlength="45" value="<?=$row["pais"]?>" />
+			</div>
+			<div class="required">
+				<label class="label">Edo. Civil:</label>
+                <select name="edo" class="inputText" value="<?=$row["edo_civil"]?>">
+                	<option value="Soltero(a)" <?php if ($row["edo_civil"]=="Soltero(a)") echo "selected";?>>Soltero(a)</option>
+                    <option value="Casado(a)" <?php if ($row["edo_civil"]=="Casado(a)") echo "selected";?>>Casado(a)</option>
+                    <option value="Divorciado(a)" <?php if ($row["edo_civil"]=="Divorciado(a)") echo "selected";?>>Divorciado(a)</option>
+                    <option value="Viudo(a)" <?php if ($row["edo_civil"]=="Viudo(a)") echo "selected";?>>Viudo(a)</option>
+                </select>
+				<!--<input type="text" required name="edo" class="inputText" maxlength="45" value="<?=$row["edo_civil"]?>" />-->
+			</div>
+			<div class="required">
+				<label class="label">Dirección:</label>
+				<input type="text" required name="dire" class="inputText" maxlength="45" value="<?=$row["direccion"]?>"/>
+			</div>
+			<div class="required">
+				<label class="label">Teléfono:</label>
+				<input type="text" required name="tlf" class="inputText" maxlength="45" value="<?=$row["telefono"]?>"/>
+			</div>
+			<div class="required">
+				<label class="label">Correo:</label>
+				<input type="text" required name="corr" class="inputText" maxlength="45" value="<?=$row["correo"]?>"/>
+			</div>
+		</fieldset>
+		<fieldset>
+			<div class="botones">
+				<button class="boton" type="submit">Guardar</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<?php 		
+	}else{ echo "Tercero no encontrado";}
+	}else{
+		echo "ACCESO NO AUTORIZADO";
+	}
+?>

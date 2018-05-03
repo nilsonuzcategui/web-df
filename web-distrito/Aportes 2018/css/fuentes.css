@@ -1,0 +1,9 @@
+@font-face{
+	font-family: nombreFuente;
+	src:url(../ruta/nombre.ttf);
+}
+
+@font-face{
+	font-family: nombreFuente;
+	src:url(../ruta/nombre.otf);
+}

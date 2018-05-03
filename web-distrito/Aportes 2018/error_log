@@ -1,0 +1,2 @@
+[10-Mar-2017 16:33:52 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/djtechno/public_html/adv-distritofalcon.org.ve/aporte/tercero.php on line 28
+[10-Mar-2017 17:09:39 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/djtechno/public_html/adv-distritofalcon.org.ve/aporte/tercero.php on line 28

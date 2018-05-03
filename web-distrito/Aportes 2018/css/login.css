@@ -1,0 +1,42 @@
+<style>
+            body{
+                background: url(../img/fondo.jpg) no-repeat top center;
+                background-size: cover; /*para ocupar toda la pantalla*/
+                background-attachment: fixed;/*para que la imagen no se mueva*/
+                background-repeat: no-repeat;
+            }
+            .login{
+                background: rgba(255,255,255,.8);
+                margin: 5% 0px;
+            }
+            .login img{
+                width: 50px;
+                float: left;
+            }
+            .login-form{
+                /*background-image: url(img/logo.png);*/
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 60%;
+            }
+            form{
+                padding-bottom: 5%;
+            }
+            .login .ingresar{
+                margin-top: 10%;
+            }
+           #footer{
+                background: #777;
+                background-position: center;
+                color: #FFF;
+                margin:0;
+                padding: 15px;
+                font-size:10px;
+                line-height: 15px;
+                border: 1px solid #555;
+            }
+
+            #footer .copyright{
+                font-size: 13px;text-shadow: 0 1px rgba(93, 93, 93, 0.9);
+            }
+        </style>
